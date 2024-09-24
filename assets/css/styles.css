@@ -12,6 +12,11 @@ h1, h2{
     justify-content: center; /* center vertically */
     font-family: Arial, Helvetica, sans-serif;
     color: #9e36ff;
+    padding-top: 50px;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -32,4 +37,30 @@ h2 {
 .icon-container {
     display: flex;
     gap: 7px;
+}
+
+#nav{
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 0.5px solid #d8d8d8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #bbbbbb;
+    margin: 0 15px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    transition: color .7s ease;
+}
+
+.nav-link:hover {
+    color: #4999da;
+    opacity: .8;
 }
