@@ -28,6 +28,26 @@ h2 {
     margin-bottom: 10px;
 }
 
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .icons {
     width: 1.5rem;
     height: 1.5rem;
@@ -37,6 +57,18 @@ h2 {
 .icon-container {
     display: flex;
     gap: 7px;
+}
+
+.fade-fast {
+    opacity: 0;
+    animation: fadeInAnimation 3s ease forwards;
+}
+
+.fade-delayed {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 2s ease-in forwards;
+    animation-delay: 1.5s;
 }
 
 #nav{
